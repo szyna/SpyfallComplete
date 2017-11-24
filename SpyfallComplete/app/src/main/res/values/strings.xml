@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SpyfallComplete</string>
+    <string name="begin_game">Play</string>
+    <string name="start_game">Start Game</string>
+    <string name="end_game">End Game</string>
+    <string name="pause_game">Pause Game</string>
+    <string name="add_player">Add Player</string>
+    <string name="remove_player">Remove Player</string>
+    <string-array name="number_of_players">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>
