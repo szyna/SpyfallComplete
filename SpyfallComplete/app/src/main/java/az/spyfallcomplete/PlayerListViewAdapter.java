@@ -9,15 +9,18 @@ import android.widget.BaseAdapter;
 import android.widget.EditText;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 class PlayerListViewAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private List<String> players;
+    private GameConfiguration config;
 
     PlayerListViewAdapter(Activity context, GameConfiguration config){
-        this.players = config.playersList;
-        mInflater = context.getLayoutInflater();
+        this.players = config.playerList;
+        this.mInflater = context.getLayoutInflater();
+        this.config = config;
     }
 
     class ViewHolder {

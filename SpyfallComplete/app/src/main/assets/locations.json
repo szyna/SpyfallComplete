@@ -57,7 +57,7 @@
             "Łódź Podwodna" : ["Szpieg", "Kucharz", "Kapitan", "Operator Sonaru", "Technik Broni", "Marynarz", "Operator Radia", "Nawigator"],
             "Supermarket" : ["Szpieg", "Klient", "Kasjer", "Rzeźnik", "Dozorca", "Manager Produkcji", "Demonstrator Produktów Żywnościowych", "Wykładacz Towaru"],
             "Teatr" : ["Szpieg", "Szatniarka", "Sufler", "Kasjer (biletowy)", "Wizytor", "Reżyser", "Aktor", "Członek Ekipy"],
-            "Uniwersytet" : ["Szpieg", "Absolwent", "Profesor", "Dziekan", "Psycholog", "Konserwator", "Student", "Doradca"],
+            "Uniwersytet" : ["Szpieg", "Absolwent", "Profesor", "Dziekan", "Psycholog", "Konserwator", "Student", "Doradca"]
         }
     }
 }

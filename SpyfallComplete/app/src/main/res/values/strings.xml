@@ -4,8 +4,12 @@
     <string name="start_game">Start Game</string>
     <string name="end_game">End Game</string>
     <string name="pause_game">Pause Game</string>
+    <string name="unpase_game">Unpase Game</string>
     <string name="add_player">Add Player</string>
     <string name="remove_player">Remove Player</string>
+    <string name="accept">OK</string>
+    <string name="location">Location</string>
+    <string name="role">Role</string>
     <string-array name="number_of_players">
         <item>3</item>
         <item>4</item>
