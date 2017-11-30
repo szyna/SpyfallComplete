@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameRoundRelativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="az.spyfallcomplete.GameRoundActivity">
@@ -11,8 +12,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:stretchColumns="*"
-        android:layout_weight="1">
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical">
+
+            <TextView
+                android:id="@+id/roundCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center" />
+        </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
@@ -21,10 +33,10 @@
 
             <TextView
                 android:id="@+id/gameTimer"
-                android:textSize="30sp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textSize="30sp" />
 
         </TableRow>
 
@@ -39,19 +51,42 @@
                 android:text="@string/start_game" />
 
             <Button
-                android:id="@+id/pauseGameBtn"
+                android:id="@+id/endGameBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/pause_game" />
+                android:text="@string/end_game" />
+
         </TableRow>
 
     </TableLayout>
 
-    <ListView
-        android:id="@+id/roundPlayersListView"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/playersTableLayout"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_above="@+id/playersTableLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <ListView
+                android:id="@+id/roundPlayersListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+            <ListView
+                android:id="@+id/locationsListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/roundPlayersListView"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

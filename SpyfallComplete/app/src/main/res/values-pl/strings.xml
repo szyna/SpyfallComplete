@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpyfallComplete</string>
+    <string name="accept">OK</string>
+    <string name="add_player">Dodaj Gracza</string>
+    <string name="begin_game">Graj</string>
+    <string name="end_game">Koniec Rundy</string>
+    <string name="location">Lokalizacja</string>
+    <string name="pause_game">Wstrzymaj rundę</string>
+    <string name="remove_player">Usuń gracza</string>
+    <string name="reveal">Odkryj Szpiega</string>
+    <string name="role">Rola</string>
+    <string name="spy">Szpieg</string>
+    <string name="rounds_left">Pozostałe rundy : {0}</string>
+    <string name="start_game">Rozpocznij Grę</string>
+    <string name="unpause_game">Kontynuuj Rundę</string>
+    <string-array name="number_of_players">
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="game_results">
+        <item>Szpieg zatrzymał grę i odgadł lokalizację</item>
+        <item>Szpieg zatrzymał grę ale nie odgadł lokalizacji</item>
+        <item>Wszczęto głosowanie i odkryto szpiega</item>
+        <item>Wszczęto głosowanie i nie odkryto szpiega</item>
+    </string-array>
+    <string-array name="game_results_points">
+        <item>4</item>
+        <item>1</item>
+        <item>1</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Polski</item>
+        <item>Angielski</item>
+    </string-array>
+    <string name="next_round">Następna Runda</string>
+</resources>

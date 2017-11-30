@@ -1,5 +1,5 @@
 {
-    "Languages": ["Polski", "English"],
+    "Languages": ["polski", "English"],
     "Places": {
         "English": {
             "Airplane": ["Spy", "1st Class Passenger", "Air Marshal", "Mechanic", "Coach Passenger", "Flight Attendant", "Co-pilot", "Captain"],
@@ -30,13 +30,13 @@
             "Theater": ["Spy", "Coat Check", "Cue Card Prompter", "Ticket Office Cashier", "Theater Visitor", "Director", "Actor", "Crewman"],
             "University": ["Spy", "Graduate Student", "Professor", "Dean", "Psychologist", "Maintenance Man", "Student", "Advisor"]            
         },
-        "Polski": {
+        "polski": {
             "Samolot": ["Szpieg", "Pasażer Pierwszej Klasy", "Pilot Sił Powietrznych", "Mechanik", "Pasażer Autobusu", "Stewardesa", "Drugi Pilot", "Kapitan Samolotu"],
             "Bank": ["Szpieg", "Kierowca Uzbrojonego Samochodu", "Manager Banku", "Konsultant Kredytowy", "Rabuś", "Klient", "Ochroniarz", "Kasjer"],
             "Plaża": ["Szpieg", "Plażowy Barman", "Kitesurfer", "Ratownik", "Złodziej", "Plażowicz", "Plażowy fotograf", "Lodziarz"],
-            "Kasyno": ["Szpieg", "Barman", "Szef Bezpieczeństwa", "Wykidajło", "Kierownik Stołów", "Hustler(Cwaniaczek/Człowiek Przedsiębiorczy)", "Rozdający Karty", "Hazardzista"],
+            "Kasyno": ["Szpieg", "Barman", "Szef Bezpieczeństwa", "Wykidajło", "Kierownik Stołów", "Hustler(Cwaniaczek/Człowiek Przedsiębiorczy)", "Krupier", "Hazardzista"],
             "Katedra" : ["Szpieg", "Kapłan", "Żebrak", "Grzesznik", "Parafianin", "Turysta", "Diakon", "Kantor"],
-            "Namiot Cyrkowy" : ["Szpieg", "Akrobata", "Oswajacz Zwierząt", "Magik", "Członek Publiczności", "Połykacz Ognia", "Klaun", "Żongler"],
+            "Namiot Cyrkowy" : ["Szpieg", "Akrobata", "Oswajacz Zwierząt", "Magik", "Widz", "Połykacz Ognia", "Klaun", "Żongler"],
             "Impreza Korporacyjna" : ["Szpieg", "Komik", "Manager", "Nisczyciel Imprez", "Właściciel Firmy", "Asystent Administratora", "Księgowa", "Chłopiec na Posyłki"],
             "Armia Krzyżowców" : ["Szpieg", "Mnich", "Uwięziony Arab", "Sługa", "Biskup", "Giermek", "Łucznik", "Rycerz"],
             "Spa" : ["Szpieg", "Klient", "Stylista", "Masażystka", "Manikiurzystka", "Wizażystka", "Dematolog", "Kosmetyczka"],
@@ -47,9 +47,9 @@
             "Studio Filmowe" : ["Szpieg", "Kaskader", "Dźwiękowiec", "Kamerzysta", "Reżyser", "Kostiumograf", "Aktor", "Producent"],
             "Statek Międzykontynentalny" : ["Szpieg", "Bogaty Pasażer", "Kucharz", "Kapitan", "Barman", "Muzyk", "Kelnerka", "Mechanik"],
             "Pociąg pasażerki" : ["Szpieg", "Mechanik", "Patrol Graniczny", "Szef Kuchni", "Inżynier", "Steward", "Bileter", "Pasażer"],
-            "Statek Piracki" : ["Szpieg", "Kucharz", "Żeglarz", "Niewolnik", "Kanonier", "Związany więzień", "Kabinowy", "Kapitan Piratów"],
+            "Statek Piracki" : ["Szpieg", "Kucharz", "Żeglarz", "Niewolnik", "Kanonier", "Związany Więzień", "Kabinowy", "Kapitan Piratów"],
             "Stacja Polarna" : ["Szpieg", "Medyk", "Geolog", "Przywódca Wyprawy", "Biolog", "Operator Radia", "Hydrolog", "Meteorolog"],
-            "Komisariat" : ["Szpieg", "Detektyw", "Prawnik", "Dziennikarz", "Naukowiec Sądowy", "Archiwista dowodów", "Oficer Patrolowy", "Kryminalista"],
+            "Komisariat" : ["Szpieg", "Detektyw", "Prawnik", "Dziennikarz", "Biegły Sądowy", "Archiwista dowodów", "Oficer Patrolowy", "Kryminalista"],
             "Restauracja" : ["Szpieg", "Muzyk", "Klient", "Pomocnik Kelnera", "Gospodarz", "Szef Kuchni", "Krytyk Kulinarny", "Kelner"],
             "Szkoła" : ["Szpieg", "Nauczyciel WFu", "Uczeń", "Dyrektor", "Ochroniarz", "Dozorca", "Kucharka", "Konserwator"],
             "Stacja serwisowa" : ["Szpieg", "Manager", "Specjalista od Opon", "Motocyklista", "Właściciel Samochodu", "Pracownik Myjni Samochodowej", "Diagnostyk Samochodowy", "Mechanik Samochodowy"],
@@ -57,7 +57,7 @@
             "Łódź Podwodna" : ["Szpieg", "Kucharz", "Kapitan", "Operator Sonaru", "Technik Broni", "Marynarz", "Operator Radia", "Nawigator"],
             "Supermarket" : ["Szpieg", "Klient", "Kasjer", "Rzeźnik", "Dozorca", "Manager Produkcji", "Demonstrator Produktów Żywnościowych", "Wykładacz Towaru"],
             "Teatr" : ["Szpieg", "Szatniarka", "Sufler", "Kasjer (biletowy)", "Wizytor", "Reżyser", "Aktor", "Członek Ekipy"],
-            "Uniwersytet" : ["Szpieg", "Absolwent", "Profesor", "Dziekan", "Psycholog", "Konserwator", "Student", "Doradca"],
+            "Uniwersytet" : ["Szpieg", "Absolwent", "Profesor", "Dziekan", "Psycholog", "Konserwator", "Student", "Doradca"]
         }
     }
 }

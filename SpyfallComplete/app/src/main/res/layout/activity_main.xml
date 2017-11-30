@@ -12,16 +12,35 @@
         android:stretchColumns="*">
 
         <TableRow
-            android:layout_width="match_parent"
             android:layout_height="match_parent" >
 
             <Button
                 android:id="@+id/new_game"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:onClick="startGame"
+                android:gravity="center"
+                android:layout_weight="1"
                 android:text="@string/begin_game"
                 style="@style/Button"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/plBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/engBtn"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"/>
+
         </TableRow>
 
     </TableLayout>

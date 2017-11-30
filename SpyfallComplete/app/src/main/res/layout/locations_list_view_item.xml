@@ -8,23 +8,16 @@
     <TableRow
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/playerNameBtn"
+        <TextView
+            android:id="@+id/location1"
             android:layout_height="wrap_content"
-            android:gravity="center"
             android:layout_width="0dp"
-            android:layout_weight="1"
-            style="@style/Button"/>
+            android:layout_weight="1"/>
 
         <TextView
-            android:id="@+id/playerPoints"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
+            android:id="@+id/location2"
+            android:layout_height="wrap_content"
             android:layout_width="0dp"
-            android:layout_weight="0.3"
-            android:gravity="center" />
-
+            android:layout_weight="1"/>
     </TableRow>
 </TableLayout>

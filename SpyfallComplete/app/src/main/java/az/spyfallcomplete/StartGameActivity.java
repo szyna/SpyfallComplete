@@ -31,7 +31,7 @@ public class StartGameActivity extends AppCompatActivity {
 
         LinkedList<String> players = new LinkedList<String>(){
                 {
-                        add(""); add(""); add("");
+                        add("A"); add("B"); add("C");
                 }
         };
 
@@ -63,6 +63,7 @@ public class StartGameActivity extends AppCompatActivity {
         startGameBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                config.updatePlayerPoints();
                 Intent intent = new Intent(StartGameActivity.this, GameRoundActivity.class);
                 intent.putExtra("gameConfig", config);
                 startActivity(intent);
