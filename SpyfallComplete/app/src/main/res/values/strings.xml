@@ -2,14 +2,18 @@
     <string name="app_name">SpyfallComplete</string>
     <string name="begin_game">Play</string>
     <string name="start_game">Start Game</string>
-    <string name="end_game">End Game</string>
-    <string name="pause_game">Pause Game</string>
-    <string name="unpase_game">Unpase Game</string>
+    <string name="end_game">End Round</string>
+    <string name="pause_game">Pause Round</string>
+    <string name="unpause_game">Unpase Round</string>
     <string name="add_player">Add Player</string>
     <string name="remove_player">Remove Player</string>
     <string name="accept">OK</string>
     <string name="location">Location</string>
+    <string name="reveal">Reveal</string>
     <string name="role">Role</string>
+    <string name="spy">Spy</string>
+    <string name="next_round">Next Round</string>
+    <string name="rounds_left">Rounds left : {0}</string>
     <string-array name="number_of_players">
         <item>3</item>
         <item>4</item>
@@ -17,5 +21,21 @@
         <item>6</item>
         <item>7</item>
         <item>8</item>
+    </string-array>
+    <string-array name="game_results">
+        <item>Spy stopped and found location</item>
+        <item>Spy stopped and did not find location</item>
+        <item>Vote started and spy was revealed</item>
+        <item>Vote started and non-spy was revealed</item>
+    </string-array>
+    <string-array name="game_results_points">
+        <item>4</item>
+        <item>1</item>
+        <item>1</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="languages">
+        <item>Polish</item>
+        <item>English</item>
     </string-array>
 </resources>

@@ -71,7 +71,8 @@ class RoundListViewAdapter extends BaseAdapter {
                     TextView tv = popupView.findViewById(R.id.location_text);
                     String location = "???";
                     String role = config.playerRoles.get(players.get(i));
-                    if (!config.locations.get(config.currentLocation).get(0).equals(role)){
+                    //if (!config.locations.get(config.currentLocation).get(0).equals(role)){
+                    if(!players.get(i).equals(config.currentSpy)){
                         location = config.currentLocation;
                     }
                     tv.setText(MessageFormat.format("{0}: {1}", resources.getString(R.string.location), location));

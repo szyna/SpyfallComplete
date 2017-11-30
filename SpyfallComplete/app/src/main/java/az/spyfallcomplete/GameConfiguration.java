@@ -16,6 +16,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 public class GameConfiguration implements Parcelable{
@@ -24,12 +25,16 @@ public class GameConfiguration implements Parcelable{
     List<String> playerList;
     Map<String, Integer> playerPoints;
     Map<String, List<String>> locations;
+    long roundTime;
     long timeLeft;
+    int roundsLeft = 8;
     String currentLocation;
+    String currentSpy;
 
     GameConfiguration(Activity activity, List<String> playersList, long timeLeft, String locationsFileName){
         this.playerList = playersList;
         this.playerPoints = new HashMap<>();
+        this.roundTime = timeLeft;
         this.timeLeft = timeLeft;
         this.locations = loadLocationsFromJSON(activity, locationsFileName);
         this.currentLocation = "";
@@ -40,7 +45,7 @@ public class GameConfiguration implements Parcelable{
         Map<String, List<String>> result = new HashMap<>();
         String json = loadJSONFromAsset(activity, locationsFileName);
         try {
-            JSONObject obj = (new JSONObject(json)).getJSONObject("Places").getJSONObject("Polski");
+            JSONObject obj = (new JSONObject(json)).getJSONObject("Places").getJSONObject(Locale.getDefault().getDisplayLanguage());
             Iterator<String> keys = obj.keys();
             while( keys.hasNext() ){
                 String key = keys.next();
@@ -86,6 +91,8 @@ public class GameConfiguration implements Parcelable{
     void selectNextGameConfiguration(){
         // clear previous roles and remove previous location from locations map
         playerRoles.clear();
+        timeLeft = roundTime;
+        roundsLeft -= 1;
         if (locations.containsKey(currentLocation)){
             locations.remove(currentLocation);
         }
@@ -94,7 +101,7 @@ public class GameConfiguration implements Parcelable{
         Collections.shuffle(shuffledList);
         currentLocation = shuffledList.get(0);
         // get locations roles, remove spy shuffle rest, add spy, add n -1 items and shuffle again
-        List<String> rolesList = locations.get(currentLocation);
+        List<String> rolesList = new LinkedList<>(locations.get(currentLocation));
         String spyRole = rolesList.get(0);
         rolesList.remove(0);
         Collections.shuffle(rolesList);
@@ -103,6 +110,9 @@ public class GameConfiguration implements Parcelable{
         Collections.shuffle(rolesList);
         for (int i=0; i<playerList.size(); i++){
             playerRoles.put(playerList.get(i), rolesList.get(i));
+            if (rolesList.get(i).equals(spyRole)){
+                currentSpy = playerList.get(i);
+            }
         }
     }
 
@@ -116,6 +126,8 @@ public class GameConfiguration implements Parcelable{
         playerRoles = new HashMap<>();
         in.readMap(playerRoles, String.class.getClassLoader());
         timeLeft = in.readLong();
+        roundTime = in.readLong();
+        roundsLeft = in.readInt();
     }
 
     public static final Creator<GameConfiguration> CREATOR = new Creator<GameConfiguration>() {
@@ -142,5 +154,7 @@ public class GameConfiguration implements Parcelable{
         parcel.writeMap(playerPoints);
         parcel.writeMap(playerRoles);
         parcel.writeLong(timeLeft);
+        parcel.writeLong(roundTime);
+        parcel.writeInt(roundsLeft);
     }
 }
